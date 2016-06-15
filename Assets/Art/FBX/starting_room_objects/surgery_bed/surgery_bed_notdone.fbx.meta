@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 4b6b81e371f125d44a2cf9f303f52f5c
+timeCreated: 1464203149
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: polySurface346
+    100002: polySurface351
+    100004: polySurface355
+    100006: polySurface356
+    100008: polySurface357
+    100010: polySurface425
+    100012: polySurface426
+    100014: polySurface427
+    100016: polySurface428
+    100018: surgery_bed 1
+    100020: surgery_bed_base
+    100022: //RootNode
+    100024: surgery_pillow
+    400000: polySurface346
+    400002: polySurface351
+    400004: polySurface355
+    400006: polySurface356
+    400008: polySurface357
+    400010: polySurface425
+    400012: polySurface426
+    400014: polySurface427
+    400016: polySurface428
+    400018: surgery_bed 1
+    400020: surgery_bed_base
+    400022: //RootNode
+    400024: surgery_pillow
+    2300000: polySurface346
+    2300002: polySurface351
+    2300004: polySurface355
+    2300006: polySurface356
+    2300008: polySurface357
+    2300010: polySurface425
+    2300012: polySurface426
+    2300014: polySurface427
+    2300016: polySurface428
+    2300018: surgery_bed 1
+    2300020: surgery_bed_base
+    2300022: surgery_pillow
+    3300000: polySurface346
+    3300002: polySurface351
+    3300004: polySurface355
+    3300006: polySurface356
+    3300008: polySurface357
+    3300010: polySurface425
+    3300012: polySurface426
+    3300014: polySurface427
+    3300016: polySurface428
+    3300018: surgery_bed 1
+    3300020: surgery_bed_base
+    3300022: surgery_pillow
+    4300000: polySurface428
+    4300002: surgery_bed_base
+    4300004: polySurface427
+    4300006: polySurface425
+    4300008: polySurface426
+    4300010: polySurface351
+    4300012: polySurface356
+    4300014: polySurface355
+    4300016: polySurface357
+    4300018: surgery_bed
+    4300020: polySurface346
+    4300022: surgery_pillow
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 8
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
