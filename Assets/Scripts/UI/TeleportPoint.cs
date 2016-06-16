@@ -107,9 +107,18 @@ public class TeleportPoint : MonoBehaviour
         bool rayHit = Physics.Raycast(pointerRaycast, out pointerCollidedWith);
         if (rayHit == true)
         {
-            if (pointerCollidedWith.transform.tag == "Node")
+            if (pointerCollidedWith.transform.tag == "Teleportable")
             {
-                // Place glow code here
+                GetComponent<Renderer>().enabled = true;
+            }
+            else
+            {
+                 GameObject[] node = GameObject.FindGameObjectsWithTag("Teleportable");
+                for(int i = 0; i <= node.Length; ++i)
+                {
+                    node[i].GetComponent<Renderer>().enabled = false;
+                }
+
             }
         }
     }
@@ -131,23 +140,21 @@ public class TeleportPoint : MonoBehaviour
                 if (FindObjectOfType<GlobalVars>().CurrentEnergy <= 24)
                 {
                     audio.Play();
-                    if (pointerCollidedWith.transform.tag == "Teleportable")
-                    {
-                        //rig.transform.position = pointerCollidedWith.point;
-                        //Finds all existing portals
-                        GameObject[] portals = GameObject.FindGameObjectsWithTag("Portal");
-                        //Deletes all existing portals
-                        if (portals.Length > 0) for (int i = 0; i < portals.Length; ++i) Destroy(portals[i]);
-
-                        daPortal = (GameObject)Instantiate(portalPrefab, new Vector3(eyes.transform.position.x, eyes.transform.position.y / 1.7f,
-                            eyes.transform.position.z) + (eyes.transform.forward * 0.8f), eyes.transform.rotation);
-                        daPortal.GetComponentInChildren<PortalTeleport>().targetTeleport = new Vector3(pointerCollidedWith.point.x,
-                            rig.transform.position.y, pointerCollidedWith.point.z);
-                    }
                 }
                 else
                 {
                     FindObjectOfType<GlobalVars>().CurrentEnergy -= 25;
+
+                    //rig.transform.position = pointerCollidedWith.point;
+                    //Finds all existing portals
+                    GameObject[] portals = GameObject.FindGameObjectsWithTag("Portal");
+                    //Deletes all existing portals
+                    if (portals.Length > 0) for (int i = 0; i < portals.Length; ++i) Destroy(portals[i]);
+
+                    daPortal = (GameObject)Instantiate(portalPrefab, new Vector3(eyes.transform.position.x, eyes.transform.position.y / 1.7f,
+                        eyes.transform.position.z) + (eyes.transform.forward * 0.8f), eyes.transform.rotation);
+                    daPortal.GetComponentInChildren<PortalTeleport>().targetTeleport = new Vector3(pointerCollidedWith.point.x,
+                        rig.transform.position.y, pointerCollidedWith.point.z);
 
                     daPortal.GetComponentInChildren<PortalTeleport>().targetTeleport = new Vector3(pointerCollidedWith.point.x,
                       rig.transform.position.y, pointerCollidedWith.point.z);
