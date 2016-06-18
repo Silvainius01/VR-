@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: f22d60ced00297342a8e02c2fef0c6fc
-timeCreated: 1466008954
-licenseType: Free
+guid: f4a7f8c90eba081429ac9fc715b9c71f
+timeCreated: 1466017086
+licenseType: Pro
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Coconut
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
